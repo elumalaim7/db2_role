@@ -18,6 +18,12 @@
       import_role:
         name: db2
         tasks_from: db2_client_install
+    
+    - name: Pass variables to role
+      import_role:
+        name: db2
+      vars_files:
+        - var_files/main.yml
 
 #   - name: Clone B on the remote
 #   git:
