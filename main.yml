@@ -10,6 +10,7 @@
   #   - db2 
   #   - import_playbook: db2_client_install.yml
   # tags: db2  
+ 
   tasks:
     - import_role:
         name: db2
@@ -22,7 +23,7 @@
     - name: Pass variables to role
       import_role:
         name: db2
-        vars_from: main.yml
+        vars_from: main
         
 
 #   - name: Clone B on the remote
