@@ -18,7 +18,7 @@
     - name: Run tasks/other.yaml instead of 'main'
       import_role:
         name: db2
-        tasks_from: db2_client_install/main.yml
+        tasks_from: db2_client_install.yml
     
     - name: Pass variables to role
       import_role:
