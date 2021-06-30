@@ -9,3 +9,19 @@
   roles: 
     - db2 
   tags: db2  
+
+
+#   - name: Clone B on the remote
+#   git:
+#     repo: 'http://{{ git_user }}:{{ git_pass }}@somehost/B.git'
+#     dest: /tmp/B
+
+# # This copies the specified file from the remote to the current dir
+# - name: Fetch yml from remote
+#   fetch:
+#     src: /tmp/B/Y.yml
+#     dest: ./
+#     flat: yes
+
+# - name: Run Y
+#   include_tasks: Y.yml
