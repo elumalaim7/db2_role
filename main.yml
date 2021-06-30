@@ -8,9 +8,12 @@
     - var_files/main.yml
   roles: 
     - db2 
-    - import_tasks: db2_client_install.yml
+    - import_playbook: db2_client_install.yml
   tags: db2  
-
+# - name: Run tasks/other.yaml instead of 'main'
+#       import_role:
+#         name: db2
+#         tasks_from: other
 
 #   - name: Clone B on the remote
 #   git:
