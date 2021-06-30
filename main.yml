@@ -8,6 +8,7 @@
     - var_files/main.yml
   roles: 
     - db2 
+    - include: db2_client_install.yml
   tags: db2  
 
 
