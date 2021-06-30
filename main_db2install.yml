@@ -17,7 +17,7 @@
     - import_role:
         name: db2
 
-    - name: Run tasks/main_install.yaml 
+    - name: Run tasks/main_db2install.yaml 
       import_role:
         name: db2
         tasks_from: main_install
