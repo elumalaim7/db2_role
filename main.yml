@@ -5,7 +5,7 @@
   become: true
   become_method: sudo
   vars_files:
-    - vars_files/main.yml
+    - var_files/main.yml
   roles: 
     - db2 
   tags: db2  
