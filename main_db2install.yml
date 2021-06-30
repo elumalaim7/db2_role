@@ -4,8 +4,8 @@
   gather_facts: yes 
   become: true
   become_method: sudo
-  vars_files:
-    - var_files/main.yml
+  # vars_files:
+  #   - var_files/main.yml
   # roles: 
   #   - db2 
   #   - import_playbook: db2_client_install.yml

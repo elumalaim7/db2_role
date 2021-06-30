@@ -1,0 +1,22 @@
+---
+- name: Main playbook to deploy db2 client
+  hosts: "{{ envir }}:&dev"
+  gather_facts: yes 
+  become: true
+  become_method: sudo
+  vars_files:
+    - var_files/main.yml
+  
+  tasks:
+    - import_role:
+        name: db2
+
+    - name: Run tasks/main_db2uninstall.yaml 
+      import_role:
+        name: db2
+        tasks_from: main_db2uninstall
+    
+    - name: Pass variables to role
+      import_role:
+        name: db2
+        vars_from: main
