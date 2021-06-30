@@ -6,14 +6,14 @@
   become_method: sudo
   vars_files:
     - var_files/main.yml
-  roles: 
-    - db2 
-    - import_playbook: db2_client_install.yml
-  tags: db2  
-# - name: Run tasks/other.yaml instead of 'main'
-#       import_role:
-#         name: db2
-#         tasks_from: other
+  # roles: 
+  #   - db2 
+  #   - import_playbook: db2_client_install.yml
+  # tags: db2  
+- name: Run tasks/other.yaml instead of 'main'
+      import_role:
+        name: db2
+        tasks_from: db2_client_install
 
 #   - name: Clone B on the remote
 #   git:
