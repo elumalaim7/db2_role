@@ -17,13 +17,13 @@
 
     - name: Run tasks/other.yaml instead of 'main'
       import_role:
-        name: db2
-        tasks_from: db2_client_install
+        name: db2_client_install
+        tasks_from: main
     
     - name: Pass variables to role
       import_role:
         name: db2
-      vars_from: main
+        vars_from: main
         
 
 #   - name: Clone B on the remote
