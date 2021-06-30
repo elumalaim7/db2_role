@@ -4,8 +4,8 @@
   gather_facts: yes 
   become: true
   become_method: sudo
-  vars:
-      env: dev  
+  # vars:
+  #     env: dev  
   # vars_files:
   #   - var_files/main.yml
   # roles:

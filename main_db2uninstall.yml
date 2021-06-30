@@ -6,8 +6,8 @@
   become_method: sudo
   # vars_files:
   #   - var_files/main.yml
-  vars:
-      env: dev
+  # vars:
+  #     env: dev
   tasks:
     - import_role:
         name: db2
