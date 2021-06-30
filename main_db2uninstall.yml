@@ -4,9 +4,10 @@
   gather_facts: yes 
   become: true
   become_method: sudo
-  vars_files:
-    - var_files/main.yml
-  
+  # vars_files:
+  #   - var_files/main.yml
+  vars:
+      env: dev
   tasks:
     - import_role:
         name: db2
