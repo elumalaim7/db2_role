@@ -20,7 +20,7 @@
     - name: Run tasks/main_db2install.yaml 
       import_role:
         name: db2
-        tasks_from: main_install
+        tasks_from: main_db2install
     
     - name: Pass variables to role
       import_role:
