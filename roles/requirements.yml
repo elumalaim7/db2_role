@@ -1,6 +1,6 @@
 ---
 ## install the role from GitHub
-- name: db2_client_install
+- name: db2
   src: git+https://github.com/elumalaim7/db2.git
   version: main
   scm: git
