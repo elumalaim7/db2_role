@@ -10,7 +10,11 @@
   #   - db2 
   #   - import_playbook: db2_client_install.yml
   # tags: db2  
-- name: Run tasks/other.yaml instead of 'main'
+  tasks:
+    - import_role:
+        name: db2
+
+    - name: Run tasks/other.yaml instead of 'main'
       import_role:
         name: db2
         tasks_from: db2_client_install
