@@ -23,7 +23,7 @@
     - name: Pass variables to role
       import_role:
         name: db2
-        vars_from: main
+      vars_from: main
         
 
 #   - name: Clone B on the remote
