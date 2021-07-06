@@ -1,5 +1,5 @@
 ---
-envir: dev
+# envir: dev
 # - DB2 Installation and Instance ID
 # user_name: db2inst1
 # group_name: db2inst1
