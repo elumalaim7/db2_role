@@ -5,7 +5,7 @@
   become: true
   become_method: sudo
   vars:
-      envir: test  
+      envir: test
   # vars_files:
   #   - var_files/main.yml
   # roles:
