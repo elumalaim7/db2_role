@@ -1,11 +1,11 @@
 ---
 - name: Main playbook to deploy db2 client
-  hosts: "{{ env }}:&test"
+  hosts: "{{ envir }}:&test"
   gather_facts: yes 
   become: true
   become_method: sudo
   vars:
-      env: dev
+      envir: dev
   # vars_files:
   #   - var_files/main.yml
   # roles:
