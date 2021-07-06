@@ -1,6 +1,6 @@
 ---
 - name: Main playbook to deploy db2 client
-  hosts: "{{ test_hostname }}:&{{ envir }}:&test"
+  hosts: "{{ envir }}:&test"
   gather_facts: yes 
   become: true
   become_method: sudo
